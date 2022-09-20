@@ -1,21 +1,50 @@
-#include "main.h"
+#include <stdio.h>
 
 /**
- * main - print putchar
- * Return: always 0
+ *main - block to execute
+ *Desciption: computes and prints
+ *Return: 0
  */
 
 int main(void)
+
 {
-	_putchar('_');
-	_putchar('p');
-	_putchar('u');
-	_putchar('t');
-	_putchar('c');
-	_putchar('h');
-	_putchar('a');
-	_putchar('r');
-	_putchar('\n');
+
+	int i = 0;
+
+	long int a = 0, b = 1, next;
+
+
+
+	while (i < 50)
+
+	{
+
+		next = a + b;
+
+		a = b;
+
+		b = next;
+
+		printf("%lu", next);
+
+
+
+		if (i < 49)
+
+		{
+
+			printf(", ");
+
+		}
+
+		i++;
+
+	}
+
+	putchar('\n');
+
+
 
 	return (0);
 
